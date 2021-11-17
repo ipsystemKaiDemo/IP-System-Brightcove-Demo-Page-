@@ -1,1 +1,1 @@
-# IP-System-Brightcove-Demo-Page-
+# IP-System-Brightcove-Demo-Page
