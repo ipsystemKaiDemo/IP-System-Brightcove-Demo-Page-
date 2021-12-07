@@ -6,7 +6,7 @@
 // vjs-overlay vjs-overlay-top-left vjs-overlay-background 會浮出 沒有的 overlay
 //  overlay can't remove left-top
 
-videojs.plugin('OverLayPlayList', function() {
+videojs.plugin('Overlay_Playlist', function() {
 
         // 自動抓 video tag id
         var videoTag = document.getElementsByTagName("video");
