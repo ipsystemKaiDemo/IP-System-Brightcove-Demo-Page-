@@ -9,7 +9,7 @@ videojs.registerPlugin('chapterMarkers', function() {
             return tt.kind === 'chapters';
         });
         //  Retrieve actual array of chapter cue points
-        cuesAra = chapterTT[0].cuePoints;
+        cuesAra = chapterTT[0].cues;
 
         // +++ Loop over chapter cue points and get start time of each  +++
         for (var i = 0; i < cuesAra.length; i++) {
