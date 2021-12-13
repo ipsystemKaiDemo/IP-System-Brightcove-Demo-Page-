@@ -1,0 +1,28 @@
+/* * The body style is just for the
+ * background color of the codepen.
+ * Do not include in your code.
+ */
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+
+/*
+ * Styles essential to the sample
+ * are below
+ */
+
+.video-js {
+    height: 344px;
+    width: 610px;
+}
+
+.vjs-marker {
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    background-color: blue;
+    width: 4px;
+}
