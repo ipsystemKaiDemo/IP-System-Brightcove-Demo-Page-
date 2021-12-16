@@ -5,7 +5,7 @@ videojs.registerPlugin('chapterMarkers', function() {
         chapterStartTimesAra = [];
     myPlayer.on('loadedmetadata', function() {
         // +++  Use the array filter function to retrieve data structure that contains chapter cue points +++
-        chapterTT = [].filter.call(videojs.players.myPlayer.textTracks(), function(tt) {
+        chapterTT = [].filter.call(videojs.players.myPlayerID.textTracks(), function(tt) {
             console.log(chapterTT);
             return tt.kind === 'chapters';
         });
