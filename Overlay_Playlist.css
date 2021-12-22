@@ -33,7 +33,8 @@ p {
 .playlistBlock {
     /*height: 288px;  300 320*/
     /*    width:168px;*/
-    background: #1e3246;
+    width: 25%;
+    background: #08088c;
     padding: 10px;
     overflow-y: scroll;
     color: #f0f0f0;
@@ -42,7 +43,7 @@ p {
 }
 
 .info {
-    border-bottom: 1px solid #2c3c4c;
+    border-bottom: 1px solid #00f2e7;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -68,8 +69,8 @@ p {
 .unit {
     margin: 10px 0;
     padding: 10px;
-    border-radius: 4px;
-    border-bottom: 1px solid #2c3c4c;
+    /* border-radius: 4px; */
+    border-bottom: 1px solid #00f2e7;
     text-align: left;
 }
 
