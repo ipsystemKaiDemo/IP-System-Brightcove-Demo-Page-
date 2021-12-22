@@ -14,10 +14,12 @@ videojs.registerPlugin('Overlay_Playlist', function() {
 
         var block = '<div class="playlistBlock">' +
             '<div class="info">' +
+            '<div class="blocklist">' +
             '<p class="number"></p>段' +
             '<p class="totText">共</p>' +
             '<p class="total"></p>分鐘' +
             '<a class="aLink"></a>' +
+            '</div>' +
             '</div>' +
             '</div>';
 
