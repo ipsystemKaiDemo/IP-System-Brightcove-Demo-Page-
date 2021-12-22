@@ -8,8 +8,8 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         var playlistBlock, vidoeInfoC, cuePointAra, cueLength, currentTime, homePage;
 
         // hide full screen 
-        // var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
-        // fullScreenElement.parentNode.removeChild(fullScreenElement);
+        var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
+        fullScreenElement.parentNode.removeChild(fullScreenElement);
 
 
         var block = '<div class="playlistBlock">' +
