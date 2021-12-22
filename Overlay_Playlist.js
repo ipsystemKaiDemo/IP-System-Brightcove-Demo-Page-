@@ -12,6 +12,7 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         fullScreenElement.parentNode.removeChild(fullScreenElement);
 
         var block = '<div class="playlistBlock">' +
+            '<div> >> </div>' +
             '<div class="info">' +
             '<p class="number"></p>段' +
             '<p class="totText">共</p>' +
