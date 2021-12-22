@@ -12,7 +12,7 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         fullScreenElement.parentNode.removeChild(fullScreenElement);
 
         var block = '<div class="playlistBlock">' +
-            '<input type="button" value=">>">' +
+            '<button onclick="hide()"> >> </button>' +
             '<div class="info">' +
             '<p class="number"></p>段' +
             '<p class="totText">共</p>' +
@@ -23,7 +23,10 @@ videojs.registerPlugin('Overlay_Playlist', function() {
             '</div>' +
             '</div>';
 
-        var hide = '<div> >> </div>'
+        function hide() {
+            console.log("click it!")
+        }
+
 
 
         // console homepage 抓不到;
