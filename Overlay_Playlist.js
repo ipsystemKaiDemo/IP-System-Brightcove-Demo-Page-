@@ -135,14 +135,14 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         //  create ? 個 div, 將title 代入, 將每段的時間代入
         var fgm;
 
-        function createBlock() {
+                function createBlock() {
             for (var i = 0; i < cueLength; i++) {
                 var startT = cuePointAra[i].startTime;
 
                 //一開始將位置 與每段開始的時間標上去      拔掉 function
-                var elm = '<div class="unit" aria-position="' + i +
+                var elm = '<div class="blocklist"><div class="unit" aria-position="' + i +
                     '" aria-time="' + startT + '">' + '<a name="anchor' + i + '"></a>' +
-                    '<p class="title"></p><p class="time"></p></div>';
+                    '<p class="title"></p><p class="time"></p></div></div>';
 
                 // 從第一個小孩以後開始
                 playlistBlock.children[i].insertAdjacentHTML("afterend", elm);
