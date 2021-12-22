@@ -40,10 +40,7 @@ p {
     color: #f0f0f0;
     cursor: default;
     font-size: 14px;
-}
-
-.blocklist {
-    overflow-y: scroll;
+    display: block;
 }
 
 .info {
