@@ -11,17 +11,18 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
         fullScreenElement.parentNode.removeChild(fullScreenElement);
 
-
         var block = '<div class="playlistBlock">' +
             '<div class="info">' +
-            '<div class="blocklist">' +
             '<p class="number"></p>段' +
             '<p class="totText">共</p>' +
             '<p class="total"></p>分鐘' +
+            '</div>' +
+            '<div class="blocklist">' +
             '<a class="aLink"></a>' +
             '</div>' +
-            '</div>' +
             '</div>';
+
+        var hide = '<div> >> </div>'
 
 
         // console homepage 抓不到;
