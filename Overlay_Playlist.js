@@ -1,23 +1,16 @@
-// make sure Gallery web site type will change or not, I didn't try all.
-// #performPlayer_html5_api  or .vjs-tech
+videojs.registerPlugin('Overlay_Playlist', function() {
 
-// if not setting autoplay will load not date or not play not date ?
-// 會閃窗 要找  
-// vjs-overlay vjs-overlay-top-left vjs-overlay-background 會浮出 沒有的 overlay
-//  overlay can't remove left-top
-
-videojs.plugin('Overlay_Playlist', function() {
-
-        // 自動抓 video tag id
+        // video tag id
         var videoTag = document.getElementsByTagName("video");
         var player = videojs(videoTag[0].id);
         var V_tag = document.getElementById(videoTag[0].id);
 
         var playlistBlock, vidoeInfoC, cuePointAra, cueLength, currentTime, homePage;
 
-        // 拔掉全螢幕 rwd沒作
-//         var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
-//         fullScreenElement.parentNode.removeChild(fullScreenElement);
+        // hide full screen 
+        // var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
+        // fullScreenElement.parentNode.removeChild(fullScreenElement);
+
 
         var block = '<div class="playlistBlock">' +
             '<div class="info">' +
