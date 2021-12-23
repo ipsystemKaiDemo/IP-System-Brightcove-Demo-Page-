@@ -11,7 +11,7 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
         fullScreenElement.parentNode.removeChild(fullScreenElement);
 
-        var block = '<button class="click" onclick="toggle()"> >> </button>' +
+        var block =
             '<div class="playlistBlock">' +
             '<div class="info">' +
             '<p class="number"></p>段' +
@@ -22,16 +22,7 @@ videojs.registerPlugin('Overlay_Playlist', function() {
             '<a class="aLink"></a>' +
             '</div>' +
             '</div>';
-
-        // console homepage 抓不到;
         
-         function toggle() {
-            // $(".click").click(function() {
-            console.log("Y");
-            $(".playlistBlock").toggle();
-            // });
-        }
-
         // 播放頁面執行
         var div2;
         player.on("loadstart", function() {
