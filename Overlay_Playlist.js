@@ -24,6 +24,13 @@ videojs.registerPlugin('Overlay_Playlist', function() {
             '</div>';
 
         // console homepage 抓不到;
+        
+         function toggle() {
+            // $(".click").click(function() {
+            console.log("Y");
+            $(".playlistBlock").toggle();
+            // });
+        }
 
         // 播放頁面執行
         var div2;
