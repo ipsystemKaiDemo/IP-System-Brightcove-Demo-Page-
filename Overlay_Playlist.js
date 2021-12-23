@@ -11,7 +11,7 @@ videojs.registerPlugin('Overlay_Playlist', function() {
         var fullScreenElement = document.getElementsByClassName("vjs-fullscreen-control")[0];
         fullScreenElement.parentNode.removeChild(fullScreenElement);
 
-        var block = '<button class="click"> >> </button>' +
+        var block = '<button class="click" onclick="toggle()"> >> </button>' +
             '<div class="playlistBlock">' +
             '<div class="info">' +
             '<p class="number"></p>段' +
